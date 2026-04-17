@@ -1,0 +1,12 @@
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/bin/Debug/net8.0/Domain.deps.json
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/bin/Debug/net8.0/Domain.dll
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/bin/Debug/net8.0/Domain.pdb
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/obj/Debug/net8.0/Domain.csproj.AssemblyReference.cache
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/obj/Debug/net8.0/Domain.dll
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/obj/Debug/net8.0/refint/Domain.dll
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/obj/Debug/net8.0/Domain.pdb
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Domain/obj/Debug/net8.0/ref/Domain.dll

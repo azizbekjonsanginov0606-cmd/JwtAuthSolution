@@ -1,0 +1,501 @@
+2026-04-17 14:49:34 [Information] Executed DbCommand ("149"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+2026-04-17 14:49:35 [Information] Executed DbCommand ("162"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+2026-04-17 14:49:36 [Information] Executed DbCommand ("208"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE IF NOT EXISTS \"__EFMigrationsHistory\" (
+    \"MigrationId\" character varying(150) NOT NULL,
+    \"ProductVersion\" character varying(32) NOT NULL,
+    CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY (\"MigrationId\")
+);"
+2026-04-17 14:49:36 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""LOCK TABLE \"__EFMigrationsHistory\" IN ACCESS EXCLUSIVE MODE"
+2026-04-17 14:49:36 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+2026-04-17 14:49:36 [Information] No migrations were applied. The database is already up to date.
+2026-04-17 14:49:38 [Information] Executed DbCommand ("767"ms) [Parameters=["@normalizedName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Description\", a.\"Name\", a.\"NormalizedName\"
+FROM \"AspNetRoles\" AS a
+WHERE a.\"NormalizedName\" = @normalizedName
+LIMIT 1"
+2026-04-17 14:49:38 [Information] Executed DbCommand ("2"ms) [Parameters=["@normalizedName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Description\", a.\"Name\", a.\"NormalizedName\"
+FROM \"AspNetRoles\" AS a
+WHERE a.\"NormalizedName\" = @normalizedName
+LIMIT 1"
+2026-04-17 14:49:38 [Information] Executed DbCommand ("1"ms) [Parameters=["@normalizedName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Description\", a.\"Name\", a.\"NormalizedName\"
+FROM \"AspNetRoles\" AS a
+WHERE a.\"NormalizedName\" = @normalizedName
+LIMIT 1"
+2026-04-17 14:49:39 [Information] User profile is available. Using '"/home/hacker/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2026-04-17 14:49:40 [Information] Now listening on: "http://localhost:5262"
+2026-04-17 14:49:40 [Information] Application started. Press Ctrl+C to shut down.
+2026-04-17 14:49:40 [Information] Hosting environment: "Development"
+2026-04-17 14:49:40 [Information] Content root path: "/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/API"
+2026-04-17 14:49:55 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/index.html""" - null null
+2026-04-17 14:49:56 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/index.html""" - 200 null "text/html;charset=utf-8" 578.7614ms
+2026-04-17 14:49:56 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/index.js""" - null null
+2026-04-17 14:49:56 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/index.js""" - 200 null "application/javascript;charset=utf-8" 136.9762ms
+2026-04-17 14:49:56 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/swagger/v1/swagger.json""" - null null
+2026-04-17 14:49:57 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 264.5611ms
+2026-04-17 14:50:29 [Information] Request starting "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/auth/login""" - "application/json" 62
+2026-04-17 14:50:30 [Information] Executing endpoint '"API.Controllers.AuthController.Login (API)"'
+2026-04-17 14:50:30 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Application.DTOs.LoginDto)" on controller "API.Controllers.AuthController" ("API").
+2026-04-17 14:50:30 [Information] Воридшавии корбар: "AzizbekSanginov"
+2026-04-17 14:50:31 [Information] Executed DbCommand ("479"ms) [Parameters=["@normalizedUserName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @normalizedUserName
+LIMIT 1"
+2026-04-17 14:50:31 [Information] Executed DbCommand ("55"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 14:50:31 [Information] JWT token барои "AzizbekSanginov" бо ролхои ["Admin"] сохта шуд
+2026-04-17 14:50:31 [Information] Executed DbCommand ("2"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 14:50:31 [Information] Корбар "AzizbekSanginov" (ID:"69221148-2716-4b7b-b4cb-dca6e67508f3") бомуваффакият ворид шуд
+2026-04-17 14:50:31 [Information] Executing "OkObjectResult", writing value of type '"Application.DTOs.AuthResponseDto"'.
+2026-04-17 14:50:31 [Information] Executed action "API.Controllers.AuthController.Login (API)" in 1706.3465ms
+2026-04-17 14:50:31 [Information] Executed endpoint '"API.Controllers.AuthController.Login (API)"'
+2026-04-17 14:50:31 [Information] Request finished "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/auth/login""" - 200 null "application/json; charset=utf-8" 2693.2604ms
+2026-04-17 14:51:03 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""" - null null
+2026-04-17 14:51:03 [Information] Executing endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 14:51:03 [Information] Route matched with "{action = \"GetAll\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Application.Pagination.PaginationParams)" on controller "API.Controllers.UsersController" ("API").
+2026-04-17 14:51:03 [Information] Руйхати корбарон: сахифа 1, андоза 10
+2026-04-17 14:51:04 [Information] Executed DbCommand ("104"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT count(*)::int
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\""
+2026-04-17 14:51:04 [Information] Executed DbCommand ("3"ms) [Parameters=["@p1='?' (DbType = Int32), @p='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\"
+ORDER BY a.\"UserName\"
+LIMIT @p1 OFFSET @p"
+2026-04-17 14:51:04 [Information] Executed DbCommand ("3"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 14:51:04 [Information] Executing "OkObjectResult", writing value of type '"Application.Pagination.PagedResult`1[[Application.DTOs.UserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2026-04-17 14:51:04 [Information] Executed action "API.Controllers.UsersController.GetAll (API)" in 544.3981ms
+2026-04-17 14:51:04 [Information] Executed endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 14:51:04 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""" - 200 null "application/json; charset=utf-8" 708.4853ms
+2026-04-17 14:55:58 [Information] Request starting "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/auth/change-password""" - "application/json" 67
+2026-04-17 14:55:58 [Information] Executing endpoint '"API.Controllers.AuthController.ChangePassword (API)"'
+2026-04-17 14:55:58 [Information] Route matched with "{action = \"ChangePassword\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ChangePassword(Application.DTOs.ChangePasswordDto)" on controller "API.Controllers.AuthController" ("API").
+2026-04-17 14:55:58 [Information] Корбар "69221148-2716-4b7b-b4cb-dca6e67508f3" паролро иваз мекунад
+2026-04-17 14:55:59 [Information] Executed DbCommand ("5"ms) [Parameters=["@p='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"Id\" = @p
+LIMIT 1"
+2026-04-17 14:55:59 [Information] Executed DbCommand ("2"ms) [Parameters=["@normalizedUserName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @normalizedUserName
+LIMIT 1"
+2026-04-17 14:55:59 [Information] Executed DbCommand ("3"ms) [Parameters=["@normalizedEmail='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @normalizedEmail
+LIMIT 2"
+2026-04-17 14:56:00 [Information] Executed DbCommand ("123"ms) [Parameters=["@p20='?', @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?' (DbType = Boolean), @p7='?', @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?' (DbType = Boolean), @p17='?', @p18='?' (DbType = Boolean), @p19='?'"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"AspNetUsers\" SET \"AccessFailedCount\" = @p0, \"ConcurrencyStamp\" = @p1, \"CreatedAt\" = @p2, \"Email\" = @p3, \"EmailConfirmed\" = @p4, \"FirstName\" = @p5, \"IsActive\" = @p6, \"LastName\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PasswordResetCode\" = @p13, \"PasswordResetExpiry\" = @p14, \"PhoneNumber\" = @p15, \"PhoneNumberConfirmed\" = @p16, \"SecurityStamp\" = @p17, \"TwoFactorEnabled\" = @p18, \"UserName\" = @p19
+WHERE \"Id\" = @p20 AND \"ConcurrencyStamp\" = @p21;"
+2026-04-17 14:56:00 [Information] Email фиристода мешавад: Ба ["azizbekjonsanginov0606@gmail.com"] | Мавзуъ: "Парол иваз шуд"
+2026-04-17 14:56:00 [Information] Пароли корбар "69221148-2716-4b7b-b4cb-dca6e67508f3" бомуваффакият иваз шуд
+2026-04-17 14:56:00 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2026-04-17 14:56:00 [Information] Executed action "API.Controllers.AuthController.ChangePassword (API)" in 2285.8332ms
+2026-04-17 14:56:00 [Information] Executed endpoint '"API.Controllers.AuthController.ChangePassword (API)"'
+2026-04-17 14:56:00 [Information] Request finished "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/auth/change-password""" - 200 null "application/json; charset=utf-8" 2379.7382ms
+2026-04-17 14:56:05 [Information] Email ба ["azizbekjonsanginov0606@gmail.com"] бомуваффакият фиристода шуд
+2026-04-17 14:56:44 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/auth/me""" - null null
+2026-04-17 14:56:44 [Information] Executing endpoint '"API.Controllers.AuthController.Me (API)"'
+2026-04-17 14:56:44 [Information] Route matched with "{action = \"Me\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Me()" on controller "API.Controllers.AuthController" ("API").
+2026-04-17 14:56:44 [Information] Дархости корбар ID: "69221148-2716-4b7b-b4cb-dca6e67508f3"
+2026-04-17 14:56:44 [Information] Executed DbCommand ("4"ms) [Parameters=["@p='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"Id\" = @p
+LIMIT 1"
+2026-04-17 14:56:44 [Information] Executed DbCommand ("3"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 14:56:44 [Information] Executing "OkObjectResult", writing value of type '"Application.DTOs.UserDto"'.
+2026-04-17 14:56:44 [Information] Executed action "API.Controllers.AuthController.Me (API)" in 42.9354ms
+2026-04-17 14:56:44 [Information] Executed endpoint '"API.Controllers.AuthController.Me (API)"'
+2026-04-17 14:56:44 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/auth/me""" - 200 null "application/json; charset=utf-8" 74.5952ms
+2026-04-17 14:57:00 [Information] Request starting "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/auth/forgot-password""" - "application/json" 49
+2026-04-17 14:57:00 [Information] Executing endpoint '"API.Controllers.AuthController.ForgotPassword (API)"'
+2026-04-17 14:57:00 [Information] Route matched with "{action = \"ForgotPassword\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(Application.DTOs.ForgotPasswordDto)" on controller "API.Controllers.AuthController" ("API").
+2026-04-17 14:57:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@normalizedEmail='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @normalizedEmail
+LIMIT 2"
+2026-04-17 14:57:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@normalizedUserName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @normalizedUserName
+LIMIT 1"
+2026-04-17 14:57:00 [Information] Executed DbCommand ("2"ms) [Parameters=["@normalizedEmail='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @normalizedEmail
+LIMIT 2"
+2026-04-17 14:57:00 [Information] Executed DbCommand ("18"ms) [Parameters=["@p20='?', @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?' (DbType = Boolean), @p7='?', @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?' (DbType = Boolean), @p17='?', @p18='?' (DbType = Boolean), @p19='?'"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"AspNetUsers\" SET \"AccessFailedCount\" = @p0, \"ConcurrencyStamp\" = @p1, \"CreatedAt\" = @p2, \"Email\" = @p3, \"EmailConfirmed\" = @p4, \"FirstName\" = @p5, \"IsActive\" = @p6, \"LastName\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PasswordResetCode\" = @p13, \"PasswordResetExpiry\" = @p14, \"PhoneNumber\" = @p15, \"PhoneNumberConfirmed\" = @p16, \"SecurityStamp\" = @p17, \"TwoFactorEnabled\" = @p18, \"UserName\" = @p19
+WHERE \"Id\" = @p20 AND \"ConcurrencyStamp\" = @p21;"
+2026-04-17 14:57:00 [Information] Email фиристода мешавад: Ба ["azizbekjonsanginov0606@gmail.com"] | Мавзуъ: "Password Reset Code"
+2026-04-17 14:57:04 [Information] Email ба ["azizbekjonsanginov0606@gmail.com"] бомуваффакият фиристода шуд
+2026-04-17 14:57:04 [Information] Executing "OkObjectResult", writing value of type '"Application.Results.Result"'.
+2026-04-17 14:57:04 [Information] Executed action "API.Controllers.AuthController.ForgotPassword (API)" in 3624.3137ms
+2026-04-17 14:57:04 [Information] Executed endpoint '"API.Controllers.AuthController.ForgotPassword (API)"'
+2026-04-17 14:57:04 [Information] Request finished "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/auth/forgot-password""" - 200 null "application/json; charset=utf-8" 3713.3351ms
+2026-04-17 14:57:37 [Information] Request starting "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/auth/reset-password""" - "application/json" 51
+2026-04-17 14:57:37 [Information] Executing endpoint '"API.Controllers.AuthController.ResetPassword (API)"'
+2026-04-17 14:57:37 [Information] Route matched with "{action = \"ResetPassword\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ResetPassword(Application.DTOs.ResetPasswordDto)" on controller "API.Controllers.AuthController" ("API").
+2026-04-17 14:57:37 [Information] Executed DbCommand ("4"ms) [Parameters=["@normalizedEmail='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @normalizedEmail
+LIMIT 2"
+2026-04-17 14:57:37 [Information] Executed DbCommand ("4"ms) [Parameters=["@normalizedUserName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @normalizedUserName
+LIMIT 1"
+2026-04-17 14:57:37 [Information] Executed DbCommand ("1"ms) [Parameters=["@normalizedEmail='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @normalizedEmail
+LIMIT 2"
+2026-04-17 14:57:37 [Information] Executed DbCommand ("30"ms) [Parameters=["@p20='?', @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?' (DbType = Boolean), @p7='?', @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?' (DbType = Boolean), @p17='?', @p18='?' (DbType = Boolean), @p19='?'"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"AspNetUsers\" SET \"AccessFailedCount\" = @p0, \"ConcurrencyStamp\" = @p1, \"CreatedAt\" = @p2, \"Email\" = @p3, \"EmailConfirmed\" = @p4, \"FirstName\" = @p5, \"IsActive\" = @p6, \"LastName\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PasswordResetCode\" = @p13, \"PasswordResetExpiry\" = @p14, \"PhoneNumber\" = @p15, \"PhoneNumberConfirmed\" = @p16, \"SecurityStamp\" = @p17, \"TwoFactorEnabled\" = @p18, \"UserName\" = @p19
+WHERE \"Id\" = @p20 AND \"ConcurrencyStamp\" = @p21;"
+2026-04-17 14:57:38 [Information] Executed DbCommand ("1"ms) [Parameters=["@normalizedUserName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @normalizedUserName
+LIMIT 1"
+2026-04-17 14:57:38 [Information] Executed DbCommand ("3"ms) [Parameters=["@normalizedEmail='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @normalizedEmail
+LIMIT 2"
+2026-04-17 14:57:38 [Information] Executed DbCommand ("47"ms) [Parameters=["@p20='?', @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?' (DbType = Boolean), @p7='?', @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?' (DbType = Boolean), @p17='?', @p18='?' (DbType = Boolean), @p19='?'"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"AspNetUsers\" SET \"AccessFailedCount\" = @p0, \"ConcurrencyStamp\" = @p1, \"CreatedAt\" = @p2, \"Email\" = @p3, \"EmailConfirmed\" = @p4, \"FirstName\" = @p5, \"IsActive\" = @p6, \"LastName\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PasswordResetCode\" = @p13, \"PasswordResetExpiry\" = @p14, \"PhoneNumber\" = @p15, \"PhoneNumberConfirmed\" = @p16, \"SecurityStamp\" = @p17, \"TwoFactorEnabled\" = @p18, \"UserName\" = @p19
+WHERE \"Id\" = @p20 AND \"ConcurrencyStamp\" = @p21;"
+2026-04-17 14:57:38 [Information] Executed DbCommand ("1"ms) [Parameters=["@normalizedUserName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @normalizedUserName
+LIMIT 1"
+2026-04-17 14:57:38 [Information] Executed DbCommand ("1"ms) [Parameters=["@normalizedEmail='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @normalizedEmail
+LIMIT 2"
+2026-04-17 14:57:38 [Information] Executed DbCommand ("7"ms) [Parameters=["@p20='?', @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?' (DbType = Boolean), @p7='?', @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?' (DbType = Boolean), @p17='?', @p18='?' (DbType = Boolean), @p19='?'"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"AspNetUsers\" SET \"AccessFailedCount\" = @p0, \"ConcurrencyStamp\" = @p1, \"CreatedAt\" = @p2, \"Email\" = @p3, \"EmailConfirmed\" = @p4, \"FirstName\" = @p5, \"IsActive\" = @p6, \"LastName\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PasswordResetCode\" = @p13, \"PasswordResetExpiry\" = @p14, \"PhoneNumber\" = @p15, \"PhoneNumberConfirmed\" = @p16, \"SecurityStamp\" = @p17, \"TwoFactorEnabled\" = @p18, \"UserName\" = @p19
+WHERE \"Id\" = @p20 AND \"ConcurrencyStamp\" = @p21;"
+2026-04-17 14:57:38 [Information] Executing StatusCodeResult, setting HTTP status code 200
+2026-04-17 14:57:38 [Information] Executed action "API.Controllers.AuthController.ResetPassword (API)" in 512.2834ms
+2026-04-17 14:57:38 [Information] Executed endpoint '"API.Controllers.AuthController.ResetPassword (API)"'
+2026-04-17 14:57:38 [Information] Request finished "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/auth/reset-password""" - 200 0 null 559.2905ms
+2026-04-17 14:57:50 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/auth/me""" - null null
+2026-04-17 14:57:50 [Information] Executing endpoint '"API.Controllers.AuthController.Me (API)"'
+2026-04-17 14:57:50 [Information] Route matched with "{action = \"Me\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Me()" on controller "API.Controllers.AuthController" ("API").
+2026-04-17 14:57:50 [Information] Дархости корбар ID: "69221148-2716-4b7b-b4cb-dca6e67508f3"
+2026-04-17 14:57:50 [Information] Executed DbCommand ("10"ms) [Parameters=["@p='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"Id\" = @p
+LIMIT 1"
+2026-04-17 14:57:50 [Information] Executed DbCommand ("4"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 14:57:50 [Information] Executing "OkObjectResult", writing value of type '"Application.DTOs.UserDto"'.
+2026-04-17 14:57:50 [Information] Executed action "API.Controllers.AuthController.Me (API)" in 38.1066ms
+2026-04-17 14:57:50 [Information] Executed endpoint '"API.Controllers.AuthController.Me (API)"'
+2026-04-17 14:57:50 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/auth/me""" - 200 null "application/json; charset=utf-8" 52.5266ms
+2026-04-17 14:57:56 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""" - null null
+2026-04-17 14:57:56 [Information] Executing endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 14:57:56 [Information] Route matched with "{action = \"GetAll\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Application.Pagination.PaginationParams)" on controller "API.Controllers.UsersController" ("API").
+2026-04-17 14:57:56 [Information] Руйхати корбарон: сахифа 1, андоза 10
+2026-04-17 14:57:56 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT count(*)::int
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\""
+2026-04-17 14:57:56 [Information] Executed DbCommand ("1"ms) [Parameters=["@p1='?' (DbType = Int32), @p='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\"
+ORDER BY a.\"UserName\"
+LIMIT @p1 OFFSET @p"
+2026-04-17 14:57:56 [Information] Executed DbCommand ("1"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 14:57:56 [Information] Executing "OkObjectResult", writing value of type '"Application.Pagination.PagedResult`1[[Application.DTOs.UserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2026-04-17 14:57:56 [Information] Executed action "API.Controllers.UsersController.GetAll (API)" in 21.7675ms
+2026-04-17 14:57:56 [Information] Executed endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 14:57:56 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""" - 200 null "application/json; charset=utf-8" 38.0582ms
+2026-04-17 14:58:09 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""?PageSize=9" - null null
+2026-04-17 14:58:09 [Information] Executing endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 14:58:09 [Information] Route matched with "{action = \"GetAll\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Application.Pagination.PaginationParams)" on controller "API.Controllers.UsersController" ("API").
+2026-04-17 14:58:09 [Information] Руйхати корбарон: сахифа 1, андоза 9
+2026-04-17 14:58:09 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT count(*)::int
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\""
+2026-04-17 14:58:09 [Information] Executed DbCommand ("1"ms) [Parameters=["@p1='?' (DbType = Int32), @p='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\"
+ORDER BY a.\"UserName\"
+LIMIT @p1 OFFSET @p"
+2026-04-17 14:58:09 [Information] Executed DbCommand ("1"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 14:58:09 [Information] Executing "OkObjectResult", writing value of type '"Application.Pagination.PagedResult`1[[Application.DTOs.UserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2026-04-17 14:58:09 [Information] Executed action "API.Controllers.UsersController.GetAll (API)" in 55.481ms
+2026-04-17 14:58:09 [Information] Executed endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 14:58:09 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""?PageSize=9" - 200 null "application/json; charset=utf-8" 61.5835ms
+2026-04-17 14:58:22 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""?PageSize=6" - null null
+2026-04-17 14:58:22 [Information] Executing endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 14:58:22 [Information] Route matched with "{action = \"GetAll\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Application.Pagination.PaginationParams)" on controller "API.Controllers.UsersController" ("API").
+2026-04-17 14:58:22 [Information] Руйхати корбарон: сахифа 1, андоза 6
+2026-04-17 14:58:22 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT count(*)::int
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\""
+2026-04-17 14:58:22 [Information] Executed DbCommand ("4"ms) [Parameters=["@p1='?' (DbType = Int32), @p='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\"
+ORDER BY a.\"UserName\"
+LIMIT @p1 OFFSET @p"
+2026-04-17 14:58:22 [Information] Executed DbCommand ("4"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 14:58:22 [Information] Executing "OkObjectResult", writing value of type '"Application.Pagination.PagedResult`1[[Application.DTOs.UserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2026-04-17 14:58:22 [Information] Executed action "API.Controllers.UsersController.GetAll (API)" in 23.9033ms
+2026-04-17 14:58:22 [Information] Executed endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 14:58:22 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""?PageSize=6" - 200 null "application/json; charset=utf-8" 29.9564ms
+2026-04-17 14:58:30 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""" - null null
+2026-04-17 14:58:30 [Information] Executing endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 14:58:30 [Information] Route matched with "{action = \"GetAll\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Application.Pagination.PaginationParams)" on controller "API.Controllers.UsersController" ("API").
+2026-04-17 14:58:30 [Information] Руйхати корбарон: сахифа 1, андоза 10
+2026-04-17 14:58:30 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT count(*)::int
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\""
+2026-04-17 14:58:30 [Information] Executed DbCommand ("3"ms) [Parameters=["@p1='?' (DbType = Int32), @p='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\"
+ORDER BY a.\"UserName\"
+LIMIT @p1 OFFSET @p"
+2026-04-17 14:58:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 14:58:30 [Information] Executing "OkObjectResult", writing value of type '"Application.Pagination.PagedResult`1[[Application.DTOs.UserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2026-04-17 14:58:30 [Information] Executed action "API.Controllers.UsersController.GetAll (API)" in 35.3793ms
+2026-04-17 14:58:30 [Information] Executed endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 14:58:30 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""" - 200 null "application/json; charset=utf-8" 51.9571ms
+2026-04-17 14:58:52 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users/69221148-2716-4b7b-b4cb-dca6e67508f3""" - null null
+2026-04-17 14:58:52 [Information] Executing endpoint '"API.Controllers.UsersController.GetById (API)"'
+2026-04-17 14:58:52 [Information] Route matched with "{action = \"GetById\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.String)" on controller "API.Controllers.UsersController" ("API").
+2026-04-17 14:58:52 [Information] Дархости корбар ID: "69221148-2716-4b7b-b4cb-dca6e67508f3"
+2026-04-17 14:58:52 [Information] Executed DbCommand ("3"ms) [Parameters=["@p='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"Id\" = @p
+LIMIT 1"
+2026-04-17 14:58:52 [Information] Executed DbCommand ("3"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 14:58:52 [Information] Executing "OkObjectResult", writing value of type '"Application.DTOs.UserDto"'.
+2026-04-17 14:58:52 [Information] Executed action "API.Controllers.UsersController.GetById (API)" in 21.8558ms
+2026-04-17 14:58:52 [Information] Executed endpoint '"API.Controllers.UsersController.GetById (API)"'
+2026-04-17 14:58:52 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users/69221148-2716-4b7b-b4cb-dca6e67508f3""" - 200 null "application/json; charset=utf-8" 51.6328ms
+2026-04-17 15:00:24 [Information] Request starting "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/users/assign-role""" - "application/json" 72
+2026-04-17 15:00:24 [Information] Executing endpoint '"API.Controllers.UsersController.AssignRole (API)"'
+2026-04-17 15:00:24 [Information] Route matched with "{action = \"AssignRole\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignRole(Application.DTOs.AssignRoleDto)" on controller "API.Controllers.UsersController" ("API").
+2026-04-17 15:00:24 [Information] Таъини роли ["User"] ба корбар "69221148-2716-4b7b-b4cb-dca6e67508f3"
+2026-04-17 15:00:24 [Information] Executed DbCommand ("9"ms) [Parameters=["@p='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"Id\" = @p
+LIMIT 1"
+2026-04-17 15:00:24 [Information] Executed DbCommand ("11"ms) [Parameters=["@normalizedName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Description\", a.\"Name\", a.\"NormalizedName\"
+FROM \"AspNetRoles\" AS a
+WHERE a.\"NormalizedName\" = @normalizedName
+LIMIT 1"
+2026-04-17 15:00:24 [Information] Executed DbCommand ("3"ms) [Parameters=["@normalizedRoleName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Description\", a.\"Name\", a.\"NormalizedName\"
+FROM \"AspNetRoles\" AS a
+WHERE a.\"NormalizedName\" = @normalizedRoleName
+LIMIT 2"
+2026-04-17 15:00:24 [Information] Executed DbCommand ("3"ms) [Parameters=["@p='?', @p1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"UserId\", a.\"RoleId\"
+FROM \"AspNetUserRoles\" AS a
+WHERE a.\"UserId\" = @p AND a.\"RoleId\" = @p1
+LIMIT 1"
+2026-04-17 15:00:24 [Information] Executed DbCommand ("1"ms) [Parameters=["@normalizedRoleName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Description\", a.\"Name\", a.\"NormalizedName\"
+FROM \"AspNetRoles\" AS a
+WHERE a.\"NormalizedName\" = @normalizedRoleName
+LIMIT 2"
+2026-04-17 15:00:24 [Information] Executed DbCommand ("2"ms) [Parameters=["@p='?', @p1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"UserId\", a.\"RoleId\"
+FROM \"AspNetUserRoles\" AS a
+WHERE a.\"UserId\" = @p AND a.\"RoleId\" = @p1
+LIMIT 1"
+2026-04-17 15:00:24 [Information] Executed DbCommand ("2"ms) [Parameters=["@normalizedRoleName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Description\", a.\"Name\", a.\"NormalizedName\"
+FROM \"AspNetRoles\" AS a
+WHERE a.\"NormalizedName\" = @normalizedRoleName
+LIMIT 2"
+2026-04-17 15:00:24 [Information] Executed DbCommand ("6"ms) [Parameters=["@normalizedUserName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @normalizedUserName
+LIMIT 1"
+2026-04-17 15:00:24 [Information] Executed DbCommand ("6"ms) [Parameters=["@normalizedEmail='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @normalizedEmail
+LIMIT 2"
+2026-04-17 15:00:24 [Information] Executed DbCommand ("6"ms) [Parameters=["@p0='?', @p1='?', @p22='?', @p2='?' (DbType = Int32), @p3='?', @p23='?', @p4='?' (DbType = DateTime), @p5='?', @p6='?' (DbType = Boolean), @p7='?', @p8='?' (DbType = Boolean), @p9='?', @p10='?' (DbType = Boolean), @p11='?' (DbType = DateTime), @p12='?', @p13='?', @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?', @p20='?' (DbType = Boolean), @p21='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"AspNetUserRoles\" (\"RoleId\", \"UserId\")
+VALUES (@p0, @p1);
+UPDATE \"AspNetUsers\" SET \"AccessFailedCount\" = @p2, \"ConcurrencyStamp\" = @p3, \"CreatedAt\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"FirstName\" = @p7, \"IsActive\" = @p8, \"LastName\" = @p9, \"LockoutEnabled\" = @p10, \"LockoutEnd\" = @p11, \"NormalizedEmail\" = @p12, \"NormalizedUserName\" = @p13, \"PasswordHash\" = @p14, \"PasswordResetCode\" = @p15, \"PasswordResetExpiry\" = @p16, \"PhoneNumber\" = @p17, \"PhoneNumberConfirmed\" = @p18, \"SecurityStamp\" = @p19, \"TwoFactorEnabled\" = @p20, \"UserName\" = @p21
+WHERE \"Id\" = @p22 AND \"ConcurrencyStamp\" = @p23;"
+2026-04-17 15:00:25 [Information] Роли ["User"] ба корбар "69221148-2716-4b7b-b4cb-dca6e67508f3" таъин шуд
+2026-04-17 15:00:25 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2026-04-17 15:00:25 [Information] Executed action "API.Controllers.UsersController.AssignRole (API)" in 692.2508ms
+2026-04-17 15:00:25 [Information] Executed endpoint '"API.Controllers.UsersController.AssignRole (API)"'
+2026-04-17 15:00:25 [Information] Request finished "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/users/assign-role""" - 200 null "application/json; charset=utf-8" 760.0956ms
+2026-04-17 15:00:36 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""" - null null
+2026-04-17 15:00:36 [Information] Executing endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 15:00:36 [Information] Route matched with "{action = \"GetAll\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Application.Pagination.PaginationParams)" on controller "API.Controllers.UsersController" ("API").
+2026-04-17 15:00:36 [Information] Руйхати корбарон: сахифа 1, андоза 10
+2026-04-17 15:00:36 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT count(*)::int
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\""
+2026-04-17 15:00:36 [Information] Executed DbCommand ("2"ms) [Parameters=["@p1='?' (DbType = Int32), @p='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\"
+ORDER BY a.\"UserName\"
+LIMIT @p1 OFFSET @p"
+2026-04-17 15:00:36 [Information] Executed DbCommand ("1"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 15:00:36 [Information] Executing "OkObjectResult", writing value of type '"Application.Pagination.PagedResult`1[[Application.DTOs.UserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2026-04-17 15:00:36 [Information] Executed action "API.Controllers.UsersController.GetAll (API)" in 28.9671ms
+2026-04-17 15:00:36 [Information] Executed endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 15:00:36 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""" - 200 null "application/json; charset=utf-8" 39.6179ms
+2026-04-17 15:00:54 [Information] Request starting "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/users/remove-role""" - "application/json" 72
+2026-04-17 15:00:54 [Information] Executing endpoint '"API.Controllers.UsersController.RemoveRole (API)"'
+2026-04-17 15:00:54 [Information] Route matched with "{action = \"RemoveRole\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveRole(Application.DTOs.AssignRoleDto)" on controller "API.Controllers.UsersController" ("API").
+2026-04-17 15:00:54 [Information] Гирифтани роли ["User"] аз корбар "69221148-2716-4b7b-b4cb-dca6e67508f3"
+2026-04-17 15:00:54 [Information] Executed DbCommand ("1"ms) [Parameters=["@p='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"Id\" = @p
+LIMIT 1"
+2026-04-17 15:00:54 [Information] Executed DbCommand ("3"ms) [Parameters=["@normalizedRoleName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Description\", a.\"Name\", a.\"NormalizedName\"
+FROM \"AspNetRoles\" AS a
+WHERE a.\"NormalizedName\" = @normalizedRoleName
+LIMIT 2"
+2026-04-17 15:00:54 [Information] Executed DbCommand ("41"ms) [Parameters=["@p='?', @p1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"UserId\", a.\"RoleId\"
+FROM \"AspNetUserRoles\" AS a
+WHERE a.\"UserId\" = @p AND a.\"RoleId\" = @p1
+LIMIT 1"
+2026-04-17 15:00:54 [Information] Executed DbCommand ("2"ms) [Parameters=["@normalizedRoleName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Description\", a.\"Name\", a.\"NormalizedName\"
+FROM \"AspNetRoles\" AS a
+WHERE a.\"NormalizedName\" = @normalizedRoleName
+LIMIT 2"
+2026-04-17 15:00:54 [Information] Executed DbCommand ("3"ms) [Parameters=["@normalizedRoleName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Description\", a.\"Name\", a.\"NormalizedName\"
+FROM \"AspNetRoles\" AS a
+WHERE a.\"NormalizedName\" = @normalizedRoleName
+LIMIT 2"
+2026-04-17 15:00:54 [Information] Executed DbCommand ("2"ms) [Parameters=["@normalizedUserName='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @normalizedUserName
+LIMIT 1"
+2026-04-17 15:00:54 [Information] Executed DbCommand ("1"ms) [Parameters=["@normalizedEmail='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @normalizedEmail
+LIMIT 2"
+2026-04-17 15:00:54 [Information] Executed DbCommand ("2"ms) [Parameters=["@p0='?', @p1='?', @p22='?', @p2='?' (DbType = Int32), @p3='?', @p23='?', @p4='?' (DbType = DateTime), @p5='?', @p6='?' (DbType = Boolean), @p7='?', @p8='?' (DbType = Boolean), @p9='?', @p10='?' (DbType = Boolean), @p11='?' (DbType = DateTime), @p12='?', @p13='?', @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?', @p20='?' (DbType = Boolean), @p21='?'"], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM \"AspNetUserRoles\"
+WHERE \"RoleId\" = @p0 AND \"UserId\" = @p1;
+UPDATE \"AspNetUsers\" SET \"AccessFailedCount\" = @p2, \"ConcurrencyStamp\" = @p3, \"CreatedAt\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"FirstName\" = @p7, \"IsActive\" = @p8, \"LastName\" = @p9, \"LockoutEnabled\" = @p10, \"LockoutEnd\" = @p11, \"NormalizedEmail\" = @p12, \"NormalizedUserName\" = @p13, \"PasswordHash\" = @p14, \"PasswordResetCode\" = @p15, \"PasswordResetExpiry\" = @p16, \"PhoneNumber\" = @p17, \"PhoneNumberConfirmed\" = @p18, \"SecurityStamp\" = @p19, \"TwoFactorEnabled\" = @p20, \"UserName\" = @p21
+WHERE \"Id\" = @p22 AND \"ConcurrencyStamp\" = @p23;"
+2026-04-17 15:00:54 [Information] Роли ["User"] аз корбар "69221148-2716-4b7b-b4cb-dca6e67508f3" гирифта шуд
+2026-04-17 15:00:54 [Information] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2026-04-17 15:00:54 [Information] Executed action "API.Controllers.UsersController.RemoveRole (API)" in 264.9578ms
+2026-04-17 15:00:54 [Information] Executed endpoint '"API.Controllers.UsersController.RemoveRole (API)"'
+2026-04-17 15:00:54 [Information] Request finished "HTTP/1.1" "POST" "http"://"localhost:5262""""/api/users/remove-role""" - 200 null "application/json; charset=utf-8" 311.8831ms
+2026-04-17 15:01:04 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""" - null null
+2026-04-17 15:01:04 [Information] Executing endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 15:01:04 [Information] Route matched with "{action = \"GetAll\", controller = \"Users\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Application.Pagination.PaginationParams)" on controller "API.Controllers.UsersController" ("API").
+2026-04-17 15:01:04 [Information] Руйхати корбарон: сахифа 1, андоза 10
+2026-04-17 15:01:05 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT count(*)::int
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\""
+2026-04-17 15:01:05 [Information] Executed DbCommand ("5"ms) [Parameters=["@p1='?' (DbType = Int32), @p='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"CreatedAt\", a.\"Email\", a.\"EmailConfirmed\", a.\"FirstName\", a.\"IsActive\", a.\"LastName\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PasswordResetCode\", a.\"PasswordResetExpiry\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM \"AspNetUsers\" AS a
+WHERE a.\"IsActive\"
+ORDER BY a.\"UserName\"
+LIMIT @p1 OFFSET @p"
+2026-04-17 15:01:05 [Information] Executed DbCommand ("8"ms) [Parameters=["@userId='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM \"AspNetUserRoles\" AS a
+INNER JOIN \"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @userId"
+2026-04-17 15:01:05 [Information] Executing "OkObjectResult", writing value of type '"Application.Pagination.PagedResult`1[[Application.DTOs.UserDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2026-04-17 15:01:05 [Information] Executed action "API.Controllers.UsersController.GetAll (API)" in 546.7498ms
+2026-04-17 15:01:05 [Information] Executed endpoint '"API.Controllers.UsersController.GetAll (API)"'
+2026-04-17 15:01:05 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5262""""/api/users""" - 200 null "application/json; charset=utf-8" 551.3441ms
+2026-04-17 15:02:07 [Information] Application is shutting down...

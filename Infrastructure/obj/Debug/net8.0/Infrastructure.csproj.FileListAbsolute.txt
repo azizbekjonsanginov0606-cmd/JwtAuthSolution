@@ -1,0 +1,5 @@
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.AssemblyReference.cache
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Infrastructure/obj/Debug/net8.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfoInputs.cache
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfo.cs
+/home/hacker/Downloads/JwtAuthSolution/JwtAuthSolution (копия)/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.CoreCompileInputs.cache
